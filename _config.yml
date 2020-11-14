@@ -1,0 +1,8 @@
+url: http://markallanson.net
+name: markallanson.net
+description: Technologist
+
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:title/index.html

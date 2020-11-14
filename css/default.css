@@ -1,0 +1,52 @@
+@font-face { font-family: SourceSans; font-weight: normal; src: url('SourceSansPro-Light.otf'); }
+@font-face { font-family: SourceSans; font-weight: bold; src: url('SourceSansPro-Semibold.otf'); }
+
+html, body {
+    margin: auto;
+    width: 750px;
+    font-family: SourceSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+    font-size: 1.25em;
+}
+
+h1 {
+    font-size: 1.1em;
+    margin-top: 1em;
+    margin-bottom: 3.5em;
+    letter-spacing: -0.05em;
+}
+
+h2 {
+    letter-spacing: -0.03em;
+    font-size: 1.7em;
+    font-weight: normal;
+    padding: 0;
+    margin: 0 0 5px 0;
+}
+
+a:visited {
+    color: darkred;
+}
+
+article h2 a, article h3 a {
+    text-decoration: none;
+    color: black;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    margin: 1em 0;
+    font-size: 0.5em;
+}
+
+hr {
+    margin: 2em 0;
+    border-top: dashed 1px silver;
+}

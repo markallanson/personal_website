@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<link rel="stylesheet" href="/css/post.css">
+
+<a href="{{ page.url }}" title="{{ page.title }}">{{ page.date | date: "%B %-d, %Y" }}</a>
+{{ content }}
+
+<div id="page-navigation">
+{% if page.previous.url %}
+<a class="prev" href="{{page.previous.url}}" title="{{page.previous.title}}">&laquo; {{page.previous.title}}</a>
+{% endif %}
+{% if page.next.url and page.previous.url %}
+<span>&nbsp;</span>
+{% endif %}
+{% if page.next.url %}
+<a class="next" href="{{page.next.url}}" title="{{page.next.title}}">{{page.next.title}} &raquo;</a>
+{% endif %}
+</div>

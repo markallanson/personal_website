@@ -1,0 +1,10 @@
+#page-navigation {
+    font-size: 0.8em;
+    width: 100%;
+    display: flex;
+}
+
+#page-navigation span {
+    text-align: center;
+    flex-grow: 2;
+}
