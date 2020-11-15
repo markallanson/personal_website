@@ -6,3 +6,5 @@ collections:
   posts:
     output: true
     permalink: /blog/:year/:title/index.html
+
+exclude: Makefile
