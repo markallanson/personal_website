@@ -3,7 +3,8 @@
 html, body {
     margin: auto;
     width: 750px;
-    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5em;
 }
 
 body {
