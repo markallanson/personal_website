@@ -45,7 +45,8 @@ version in EPEL is only 1.x at the time of writing.
 ```
 yum install wget
 mkdir pandoc
-wget -qO- https://github.com/jgm/pandoc/releases/download/2.11.1.1/pandoc-2.11.1.1-linux-amd64.tar.gz | tar xvzf - --strip-components 1 -C ./pandoc
+wget -qO- https://github.com/jgm/pandoc/releases/download/2.11.1.1/pandoc-2.11.1.1-linux-amd64.tar.gz | \
+   tar xvzf - --strip-components 1 -C ./pandoc
 export PATH="./pandoc/bin:$PATH"
 ```
 
@@ -54,7 +55,8 @@ it in a shell script that starts the virtual X server prior to wkhtmltopdf being
 a symlink so the shell script is run when wkhtmltopdf is invoked.
 
 ```
-printf '#!/bin/bash\nxvfb-run -a --server-args="-screen 0, 1024x768x24" /usr/bin/wkhtmltopdf -q $*' > /usr/bin/wkhtmltopdf.sh
+printf '#!/bin/bash\nxvfb-run -a --server-args="-screen 0, 1024x768x24" /usr/bin/wkhtmltopdf -q $*' \
+  > /usr/bin/wkhtmltopdf.sh
 chmod a+x /usr/bin/wkhtmltopdf.sh
 ln -s /usr/bin/wkhtmltopdf.sh /usr/local/bin/wkhtmltopdf
 ``` 
