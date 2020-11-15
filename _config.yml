@@ -7,4 +7,4 @@ collections:
     output: true
     permalink: /blog/:year/:title/index.html
 
-exclude: Makefile
+exclude: [ "Makefile" ]
