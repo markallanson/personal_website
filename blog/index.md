@@ -15,4 +15,4 @@ guid: blog-index
 
 {% endfor %}
 
-[Post Archive](archive.html)
+[Post Archive](/blog/archive.html)
